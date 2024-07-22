@@ -46,10 +46,10 @@ const MoviesPage = () => {
     fetchMovies();
   }, [movieName]);
 
-  const handleNavigate = (replace = false) => {
-    console.log('Navigating to /test with replace:', replace);
-    navigate('/test', { replace });
-  };
+  // const handleNavigate = (replace = false) => {
+  //   console.log('Navigating to /test with replace:', replace);
+  //   navigate('/test', { replace });
+  // };
 
   return (
     <div>
