@@ -46,10 +46,10 @@ const MoviesPage = () => {
     fetchMovies();
   }, [movieName]);
 
-  // const handleNavigate = (replace = false) => {
-  //   console.log('Navigating to /test with replace:', replace);
-  //   navigate('/test', { replace });
-  // };
+  const handleNavigate = (replace = false) => {
+    console.log('Navigating to /test with replace:', replace);
+    navigate('/test', { replace });
+  };
 
   return (
     <div>
@@ -62,14 +62,14 @@ const MoviesPage = () => {
         />
         {/* Removed the button since the search updates automatically with the input */}
       </div>
-      {/* <div className={css.buttonWrapper}>
+      <div className={css.buttonWrapper}>
         <button onClick={() => handleNavigate(false)}>
           Navigate with replace=false
         </button>
         <button onClick={() => handleNavigate(true)}>
           Navigate with replace=true
         </button>
-      </div> */}
+      </div>
       {isLoading ? (
         <p style={{ textAlign: 'center' }}>Loading...</p>
       ) : (
