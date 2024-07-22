@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { Routes, Route, Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { SharedLayout } from 'pages/Shared/SharedLayout';
 
 const HomePage = lazy(() => import('pages/Home/HomePage'));
